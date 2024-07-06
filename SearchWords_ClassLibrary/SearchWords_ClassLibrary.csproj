@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>DDD_Search_Words_ClassLibrary</Title>
+    <Authors>Juan Manuel Abreu</Authors>
+    <Description>Given a list, returns all the words that have six characters and are composed by at least two words in said list.</Description>
+  </PropertyGroup>
+
+</Project>

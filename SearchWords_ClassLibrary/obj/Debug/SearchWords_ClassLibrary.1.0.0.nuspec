@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SearchWords_ClassLibrary</id>
+    <version>1.0.0</version>
+    <title>DDD_Search_Words_ClassLibrary</title>
+    <authors>Juan Manuel Abreu</authors>
+    <description>Given a list, returns all the words that have six characters and are composed by at least two words in said list.</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\bin\Debug\net8.0\SearchWords_ClassLibrary.dll" target="lib\net8.0\SearchWords_ClassLibrary.dll" />
+  </files>
+</package>
