@@ -25,7 +25,7 @@ jobs:
       run: dotnet build ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release
 
     - name: Pack the NuGet package
-      run: dotnet pack --configuration -o ./SearchWords_ClassLibrary/obj/Debug/
+      run: dotnet pack -./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj -o ./SearchWords_ClassLibrary/obj/Debug/
 
     - name: Publish to NuGet
       env:
