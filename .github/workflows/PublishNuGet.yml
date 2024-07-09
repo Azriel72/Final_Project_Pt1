@@ -1,0 +1,33 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-nuget:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj
+
+    - name: Build the project
+      run: dotnet build ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release
+
+    - name: Pack the NuGet package
+      run: dotnet nuget pack ./SearchWords_ClassLibrary/obj/Debug/*.nuspec -o ./SearchWords_ClassLibrary/obj/Debug/
+
+    - name: Publish to NuGet
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push ./SearchWords_ClassLibrary/obj/Debug/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
