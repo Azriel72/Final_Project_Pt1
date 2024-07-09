@@ -25,9 +25,9 @@ jobs:
       run: dotnet build ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release
 
     - name: Pack the NuGet package
-      run: dotnet nuget pack ./SearchWords_ClassLibrary/obj/Debug/*.nuspec -o ./SearchWords_ClassLibrary/obj/Debug/
+      run: dotnet pack ./SearchWords_ClassLibrary/obj/Debug/*.nuspec -o ./SearchWords_ClassLibrary/obj/Debug/
 
     - name: Publish to NuGet
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      run: dotnet nuget push ./SearchWords_ClassLibrary/obj/Debug/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet push ./SearchWords_ClassLibrary/obj/Debug/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
