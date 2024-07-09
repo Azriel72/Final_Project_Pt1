@@ -13,17 +13,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install GitVersion
-      run: dotnet tool install -g GitVersion.Tool
-
-    - name: Use GitVersion to get version
-      run: gitversion /output json /output buildserver
-      id: gitversion
-
     - name: Set up .NET
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '8.0.x'
+
+    - name: Install GitVersion
+      run: |
+        dotnet tool install -g GitVersion.Tool
+        echo "/home/runner/.dotnet/tools" >> $GITHUB_PATH
+
+    - name: Install jq
+      run: sudo apt-get install -y jq
+
+    - name: Use GitVersion to get version
+      run: gitversion /output json /output buildserver
+      id: gitversion
 
     - name: Restore dependencies
       run: dotnet restore ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj
@@ -33,7 +38,8 @@ jobs:
 
     - name: Pack the NuGet package
       run: |
-        dotnet pack ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release --output ./SearchWords_ClassLibrary/obj/Debug/ /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
+        VERSION=$(jq -r '.NuGetVersionV2' <<< "${{ steps.gitversion.outputs.json }}")
+        dotnet pack ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release --output ./SearchWords_ClassLibrary/obj/Debug/ /p:PackageVersion=$VERSION
 
     - name: Publish to NuGet
       env:
