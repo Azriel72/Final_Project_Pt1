@@ -1,0 +1,12 @@
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\bin\Release\net8.0\SearchWords_ClassLibrary.deps.json
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\bin\Release\net8.0\SearchWords_ClassLibrary.dll
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\bin\Release\net8.0\SearchWords_ClassLibrary.pdb
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.AssemblyInfo.cs
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.sourcelink.json
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.dll
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\refint\SearchWords_ClassLibrary.dll
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\SearchWords_ClassLibrary.pdb
+C:\Users\ALIEN\source\repos\search_words\SearchWords_ClassLibrary\obj\Release\net8.0\ref\SearchWords_ClassLibrary.dll

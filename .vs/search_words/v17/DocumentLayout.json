@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ALIEN\\source\\repos\\search_words\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8AE14D23-4D12-4261-AA25-21147C29C4E5}|SearchWords_ClassLibrary\\SearchWords_ClassLibrary.csproj|c:\\users\\alien\\source\\repos\\search_words\\searchwords_classlibrary\\ddd_six_letter_words.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AE14D23-4D12-4261-AA25-21147C29C4E5}|SearchWords_ClassLibrary\\SearchWords_ClassLibrary.csproj|solutionrelative:searchwords_classlibrary\\ddd_six_letter_words.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{148C014E-988A-4574-866E-F13096D82FDC}|unit_tests\\unit_tests.csproj|c:\\users\\alien\\source\\repos\\search_words\\unit_tests\\unittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{148C014E-988A-4574-866E-F13096D82FDC}|unit_tests\\unit_tests.csproj|solutionrelative:unit_tests\\unittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE14D23-4D12-4261-AA25-21147C29C4E5}|SearchWords_ClassLibrary\\SearchWords_ClassLibrary.csproj|c:\\users\\alien\\source\\repos\\search_words\\searchwords_classlibrary\\ddd_six_letter_words.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE14D23-4D12-4261-AA25-21147C29C4E5}|SearchWords_ClassLibrary\\SearchWords_ClassLibrary.csproj|solutionrelative:searchwords_classlibrary\\ddd_six_letter_words.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +26,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DDD_Six_Letter_Words.cs",
               "DocumentMoniker": "C:\\Users\\ALIEN\\source\\repos\\search_words\\SearchWords_ClassLibrary\\DDD_Six_Letter_Words.cs",
               "RelativeDocumentMoniker": "SearchWords_ClassLibrary\\DDD_Six_Letter_Words.cs",
@@ -39,13 +39,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UnitTests.cs",
               "DocumentMoniker": "C:\\Users\\ALIEN\\source\\repos\\search_words\\unit_tests\\UnitTests.cs",
               "RelativeDocumentMoniker": "unit_tests\\UnitTests.cs",
               "ToolTip": "C:\\Users\\ALIEN\\source\\repos\\search_words\\unit_tests\\UnitTests.cs",
               "RelativeToolTip": "unit_tests\\UnitTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T22:21:50.1Z",
               "EditorCaption": ""
