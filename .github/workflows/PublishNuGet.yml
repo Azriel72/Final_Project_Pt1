@@ -13,6 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/execute@v0.9.12
+      id: gitversion
+
     - name: Set up .NET
       uses: actions/setup-dotnet@v2
       with:
@@ -25,7 +29,8 @@ jobs:
       run: dotnet build ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release
 
     - name: Pack the NuGet package
-      run: dotnet pack ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj -o ./SearchWords_ClassLibrary/obj/Debug/
+      run: |
+        dotnet pack ./SearchWords_ClassLibrary/SearchWords_ClassLibrary.csproj --configuration Release --output ./SearchWords_ClassLibrary/obj/Debug/ /p:PackageVersion=${{ steps.gitversion.outputs.nugetversion }}
 
     - name: Publish to NuGet
       env:
